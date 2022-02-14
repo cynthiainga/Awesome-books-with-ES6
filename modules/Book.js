@@ -1,14 +1,14 @@
-class Book {
+export default class Book {
   constructor() {
-    if (localStorage.getItem("books")) {
-      this.list = JSON.parse(localStorage.getItem("books"));
+    if (localStorage.getItem('books')) {
+      this.list = JSON.parse(localStorage.getItem('books'));
     } else {
       this.list = [];
     }
   }
 
   populateStorage() {
-    localStorage.setItem("books", JSON.stringify(this.list));
+    localStorage.setItem('books', JSON.stringify(this.list));
   }
 
   add(bookTitle, bookAuthor) {
@@ -27,17 +27,16 @@ class Book {
 
   search(title, author) {
     const book = this.list.filter(
-      (book) =>
-        book.title.toLowerCase() === title.toLowerCase() &&
-        book.author.toLowerCase() === author.toLowerCase()
+      (book) => book.title.toLowerCase() === title.toLowerCase()
+        && book.author.toLowerCase() === author.toLowerCase(),
     );
     if (book.length > 0) return true;
     return false;
   }
 
   refresh() {
-    if (localStorage.getItem("books")) {
-      this.list = JSON.parse(localStorage.getItem("books"));
+    if (localStorage.getItem('books')) {
+      this.list = JSON.parse(localStorage.getItem('books'));
     }
   }
 
@@ -45,5 +44,3 @@ class Book {
     return this.list;
   }
 }
-
-const books = new Book();
