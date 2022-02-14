@@ -1,23 +1,8 @@
+import { DateTime } from "./node_modules/luxon/build/es6/luxon.js";
 import Book from "./modules/Book.js";
+import displayBooks from "./modules/displayBooks.js";
 
 const books = new Book();
-
-function displayBooks() {
-  const booksContainer = document.getElementById("books-list");
-  books.refresh();
-  const booksList = books.getList();
-  booksContainer.innerHTML = "";
-  for (let i = 0; i < booksList.length; i += 1) {
-    const book = document.createElement("li");
-    book.innerHTML = `<h3 class="book">"${booksList[i].title}" by ${booksList[i].author}</h3>
-                      <button id="book${i}" type="button">Remove</button>`;
-    booksContainer.appendChild(book);
-    document.getElementById(`book${i}`).addEventListener("click", () => {
-      books.remove(i);
-      displayBooks();
-    });
-  }
-}
 
 displayBooks();
 
@@ -34,7 +19,6 @@ button.addEventListener("click", () => {
   } else if (!books.search(title.value, author.value)) {
     books.add(title.value, author.value);
     displayBooks();
-    console.log("click");
     title.value = "";
     author.value = "";
     message.textContent = "The book has been added successfully.";
@@ -45,7 +29,7 @@ button.addEventListener("click", () => {
   }
   setInterval(() => {
     message.textContent = " ";
-  }, 5000);
+  }, 1000);
 });
 
 const booksSection = document.getElementById("books");
@@ -69,8 +53,9 @@ document.getElementById("menu-contact").addEventListener("click", () => {
 
 const dateContainer = document.getElementById("date-time");
 function myTimer() {
-  const today = new Date();
-  dateContainer.textContent = `${today.toDateString()}, ${today.toLocaleTimeString()}`;
+  const today = DateTime.now();
+  const time = today.toLocaleString(DateTime.DATETIME_MED);
+  dateContainer.textContent = time;
 }
 myTimer();
 setInterval(() => {

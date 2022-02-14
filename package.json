@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/cynthiainga/Awesome-books-with-ES6/issues"
   },
-  "homepage": "https://github.com/cynthiainga/Awesome-books-with-ES6#readme"
+  "homepage": "https://github.com/cynthiainga/Awesome-books-with-ES6#readme",
+  "dependencies": {
+    "luxon": "^2.3.0"
+  }
 }

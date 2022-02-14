@@ -1,0 +1,196 @@
+/* stylelint-disable no-descending-specificity */
+@import url(" https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap ");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  font-family: " Poppins ", sans-serif;
+  font-size: 16px;
+  color: #212529;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  padding: 10px;
+}
+
+.add-book-section {
+  display: none;
+  font-weight: bold;
+  align-items: center;
+  justify-content: center;
+  height: 80%;
+}
+
+.add-book-container {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  font-size: 1rem;
+  width: 100%;
+  min-width: 373px;
+  max-width: 470px;
+}
+
+.add-book-container h2 {
+  margin-bottom: 50px;
+}
+
+button {
+  width: fit-content;
+  border-radius: 2px;
+  padding: 3px;
+  border: 3px solid black;
+  box-shadow: 3px 3px black;
+  justify-self: flex-end;
+}
+
+h2 {
+  font-size: 1.5em;
+  font-weight: bold;
+  justify-content: center;
+  text-align: center;
+}
+
+input {
+  border: 3px solid black;
+  padding: 5px;
+}
+
+.button-div {
+  display: flex;
+  justify-content: end;
+}
+
+.books-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 80%;
+}
+
+.books-section ul {
+  list-style-type: none;
+  padding: 0;
+  border: 3px solid black;
+  margin: 10px;
+  width: 100%;
+}
+
+.books-section li {
+  padding: 5px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.books-section li:nth-child(odd) {
+  background-color: #ddd;
+}
+
+.books-section hr {
+  border: 0;
+  border-top: 2px solid black;
+  margin: 20px auto;
+  width: 20%;
+}
+
+.book {
+  flex-grow: 1;
+  font-size: 0.9rem;
+}
+
+/* ::-webkit-input-placeholder {
+  color: black;
+  font-weight: 600;
+}
+
+:-moz-placeholder {
+  color: black;
+  font-weight: 600;
+}
+
+:-ms-input-placeholder {
+  color: black;
+  font-weight: 600;
+} */
+
+small {
+  color: red;
+}
+
+input[type=text] {
+  color: black;
+  font-weight: 600;
+}
+
+.menu {
+  display: flex;
+  padding: 0 20px;
+  border: 3px solid black;
+  margin: 10px;
+}
+
+.menu h1 {
+  flex-grow: 1;
+}
+
+.menu ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+
+.menu hr {
+  border: 0;
+  border-right: 3px solid black;
+  height: 30px;
+  margin: 3px 10px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+}
+
+.menu a:hover {
+  color: #486b8c;
+}
+
+.copyright {
+  border: 3px solid black;
+  display: block;
+  width: 99%;
+  margin: 0 auto;
+}
+
+.copyright h2 {
+  text-align: left;
+  margin-left: 20px;
+  flex-grow: 1;
+}
+
+.contact-section {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  height: 80%;
+}
+
+#date-time {
+  text-align: right;
+  margin-right: 20px;
+  font-weight: 600;
+}
