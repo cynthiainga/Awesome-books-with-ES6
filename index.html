@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Awesome books</title>
+  </head>
+  <body>
+    <header>
+      <nav class="menu">
+        <h1>Awesome books</h1>
+        <ul>
+          <li>
+            <a id="menu-list" href="#books">List</a>
+          </li>
+          <li>
+            <hr />
+          </li>
+          <li>
+            <a id="menu-add-book" href="#add-book">Add new</a>
+          </li>
+          <li>
+            <hr />
+          </li>
+          <li>
+            <a id="menu-contact" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div id="date-time"></div>
+    <section class="books-section" id="books">
+      <h2 class="title">Awesome books</h2>
+      <ul id="books-list"></ul>
+    </section>
+    <section class="add-book-section" id="add-book">
+      <form class="add-book-container">
+        <h2 class="title">Add a new book</h2>
+        <input type="text" placeholder="Title" id="title" />
+        <input type="text" placeholder="Author" id="author" />
+        <small id="error-message"></small>
+        <div class="button-div">
+          <button id="add" type="button" class="add-btn">Add</button>
+        </div>
+      </form>
+    </section>
+    <section class="contact-section" id="contact">
+      <h2>Contact Information</h2>
+      <p>
+        Do have any questions or you just want to say "Hello"? <br />
+        You can reach out to us!
+      </p>
+      <ul>
+        <li>Our Email: email@example.com</li>
+        <li>Our Phone number: 12345</li>
+        <li>Our Address: Street Address, City, Country</li>
+      </ul>
+    </section>
+    <footer class="copyright">
+      <h2>Copyright</h2>
+    </footer>
+    <script type="module" src="./index.js"></script>
+  </body>
+</html>
