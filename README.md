@@ -25,7 +25,7 @@
 - Run git clone and paste the link
 - Open the folder with your code editor
 
-## Authors
+## Author
 
 👤 **Cynthia Inga Candy**
 
