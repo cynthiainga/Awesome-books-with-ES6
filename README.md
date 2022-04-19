@@ -31,7 +31,7 @@
 
 - GitHub: [@cynthiainga](https://github.com/cynthiainga)
 - Twitter: [@CynthiaInga_C](https://twitter.com/CynthiaInga_C)
-- LinkedIn: [Cynthia Inga](https://www.linkedin.com/in/cynthia-inga7/)
+- LinkedIn: [Cynthia Inga](https://www.linkedin.com/in/cynthia-inga/)
 
 ## 🤝 Contributing
 
